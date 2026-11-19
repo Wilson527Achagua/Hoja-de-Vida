@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-CO" data-theme="light" class="no-js">
+<head>
+  <!-- ===== Metadatos ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Wilson Achagua</title>
+  <meta name="description" content="Proyectos académicos de Wilson Achagua en desarrollo web, redes, seguridad y datos.">
+  <meta name="author" content="Wilson Iraldo Achagua Rodríguez">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ff6a3d">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Proyectos | Wilson Achagua">
+  <meta property="og:description" content="Proyectos académicos de Wilson Achagua en desarrollo web, redes, seguridad y datos.">
+
+  <!-- ===== Recursos ===== -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Encabezado (igual en todas las páginas) ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">
+        <span class="logo__mark" aria-hidden="true">wa</span>
+        <span>Wilson Achagua</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="sobre-mi.html">Sobre mí</a></li>
+          <li><a class="nav__link" href="experiencia.html">Experiencia</a></li>
+          <li><a class="nav__link" href="formacion.html">Formación</a></li>
+          <li><a class="nav__link" href="proyectos.html" aria-current="page">Proyectos</a></li>
+          <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema">🌙</button>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Proyectos</p>
+        <h1>Cosas que he <span class="highlight">construido</span>.</h1>
+        <p class="lead">Proyectos académicos y personales. Usa los filtros para ver cada área.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <!-- Los botones filtran las tarjetas usando el atributo data-category -->
+        <div class="filters" role="group" aria-label="Filtrar proyectos">
+          <button class="filter-btn" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Desarrollo web</button>
+          <button class="filter-btn" type="button" data-filter="infra" aria-pressed="false">Infraestructura</button>
+          <button class="filter-btn" type="button" data-filter="datos" aria-pressed="false">Datos y análisis</button>
+        </div>
+
+        <p class="sr-only" id="filterStatus" aria-live="polite"></p>
+
+        <div class="grid-3" id="projectGrid">
+          <article class="card card--hover project reveal" data-category="web">
+            <div class="project__cover bg-coral" aria-hidden="true">🌐</div>
+            <h2 style="font-size: 1.3rem;">Hoja de vida web</h2>
+            <p>Este mismo sitio: varias páginas enlazadas, modo oscuro, formulario y publicación gratuita en GitHub Pages.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">GitHub Pages</span></div>
+          </article>
+
+          <article class="card card--hover project reveal" data-category="web">
+            <div class="project__cover bg-sun" aria-hidden="true">🎓</div>
+            <h2 style="font-size: 1.3rem;">Réplica web de Ingeniería de Software</h2>
+            <p>Réplica académica de la página del programa en UCompensar con pestañas, contadores y validación de formularios.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS Grid</span><span class="tag">JavaScript</span></div>
+          </article>
+
+          <article class="card card--hover project reveal" data-category="infra">
+            <div class="project__cover bg-violet" aria-hidden="true">🛡️</div>
+            <h2 style="font-size: 1.3rem;">Seguridad y monitoreo de servidores</h2>
+            <p>Mi parte en un proyecto grupal: firewall con <strong>pfSense</strong> y alertas con <strong>Wazuh</strong> sobre un servidor Ubuntu virtualizado.</p>
+            <div class="tags"><span class="tag">pfSense</span><span class="tag">Wazuh</span><span class="tag">Ubuntu Server</span><span class="tag">Cloudflare</span></div>
+          </article>
+
+          <article class="card card--hover project reveal" data-category="datos">
+            <div class="project__cover bg-mint" aria-hidden="true">💊</div>
+            <h2 style="font-size: 1.3rem;">Arquitectura de datos – FarmaSalud</h2>
+            <p>Comparativo <abbr title="Online Transaction Processing">OLTP</abbr> vs. <abbr title="Online Analytical Processing">OLAP</abbr> y propuesta de arquitectura para una cadena de farmacias.</p>
+            <div class="tags"><span class="tag">Modelado</span><span class="tag">OLTP</span><span class="tag">OLAP</span></div>
+          </article>
+
+          <article class="card card--hover project reveal" data-category="datos">
+            <div class="project__cover bg-sky" aria-hidden="true">🔄</div>
+            <h2 style="font-size: 1.3rem;">Migraciones de datos seguras</h2>
+            <p>Presentación y sustentación en equipo sobre cómo migrar datos sin perder información ni exponerla.</p>
+            <div class="tags"><span class="tag">Seguridad</span><span class="tag">Checklist</span><span class="tag">Trabajo en equipo</span></div>
+          </article>
+
+          <article class="card card--hover project reveal" data-category="datos">
+            <div class="project__cover bg-coral" aria-hidden="true">🛒</div>
+            <h2 style="font-size: 1.3rem;">Sistema POS para una tienda</h2>
+            <p>Análisis y diseño de un punto de venta para un negocio real: requerimientos, diagramas y documentación.</p>
+            <div class="tags"><span class="tag">draw.io</span><span class="tag">Requerimientos</span><span class="tag">LaTeX</span></div>
+          </article>
+        </div>
+
+        <p class="empty-msg" id="emptyMsg" hidden>No hay proyectos en esta categoría todavía.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cta reveal">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <a class="btn btn--ghost" href="contacto.html">Cuéntamelo →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Pie de página (igual en todas las páginas) ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Wilson Achagua · Hecho con HTML, CSS y JavaScript · Villavicencio, Colombia</p>
+      <ul class="footer__links">
+        <!-- EDITAR: reemplaza USUARIO por tu usuario de GitHub y LinkedIn -->
+        <li><a href="https://github.com/USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="toTop" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>

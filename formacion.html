@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-CO" data-theme="light" class="no-js">
+<head>
+  <!-- ===== Metadatos ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación | Wilson Achagua</title>
+  <meta name="description" content="Formación académica de Wilson Achagua: Ingeniería de Sistemas en UCompensar.">
+  <meta name="author" content="Wilson Iraldo Achagua Rodríguez">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ff6a3d">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Formación | Wilson Achagua">
+  <meta property="og:description" content="Formación académica de Wilson Achagua: Ingeniería de Sistemas en UCompensar.">
+
+  <!-- ===== Recursos ===== -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Encabezado (igual en todas las páginas) ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Ir al inicio">
+        <span class="logo__mark" aria-hidden="true">wa</span>
+        <span>Wilson Achagua</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="sobre-mi.html">Sobre mí</a></li>
+          <li><a class="nav__link" href="experiencia.html">Experiencia</a></li>
+          <li><a class="nav__link" href="formacion.html" aria-current="page">Formación</a></li>
+          <li><a class="nav__link" href="proyectos.html">Proyectos</a></li>
+          <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema">🌙</button>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Formación académica</p>
+        <h1>Aprendiendo de <span class="highlight">noche</span>, aplicando de día.</h1>
+        <p class="lead">Mis estudios y las asignaturas que más han aportado a mi perfil.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container grid-2">
+        <article class="card reveal">
+          <div class="card__icon bg-sky" aria-hidden="true">🎓</div>
+          <h2 style="font-size: 1.6rem;">Ingeniería de Sistemas</h2>
+          <p><strong>Fundación Universitaria Compensar – UCompensar</strong></p>
+          <p>Jornada nocturna · <span class="badge badge--progress">En curso</span></p>
+          <!-- Anillo de progreso: el porcentaje lo dibuja JavaScript -->
+          <div class="progress-ring" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="progress-ring__track" cx="60" cy="60" r="50" fill="none" stroke-width="12"/>
+              <circle class="progress-ring__value" id="ring" cx="60" cy="60" r="50" fill="none" stroke-width="12" data-progress="60"/>
+            </svg>
+            <div>
+              <p class="progress-ring__label">6 / 10</p>
+              <p>semestres cursados</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon bg-sun" aria-hidden="true">🏫</div>
+          <h2 style="font-size: 1.6rem;">Bachiller académico</h2>
+          <!-- EDITAR: nombre del colegio y año de grado -->
+          <p><strong>Instituto Tecnico Integrado Trinidad</strong> · Trinidad, Casanare</p>
+          <p>Año de grado: <strong>2020</strong> · <span class="badge badge--done">Finalizado</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Asignaturas destacadas</h2>
+        <p class="lead" style="margin-bottom: 1.5rem;">Materias en las que desarrollé proyectos prácticos.</p>
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Asignatura</th>
+                <th scope="col">Lo que aprendí</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Introducción a los lenguajes de Internet</strong></td>
+                <td>HTML5, CSS3, JavaScript y publicación de sitios en GitHub Pages.</td>
+                <td><span class="badge badge--progress">2026-2</span></td>
+              </tr>
+              <tr>
+                <td><strong>Administración de servicios y servidores</strong></td>
+                <td>Ubuntu Server, virtualización, pfSense y monitoreo con Wazuh.</td>
+                <td><span class="badge badge--progress">2026-2</span></td>
+              </tr>
+              <tr>
+                <td><strong>Arquitectura de datos</strong></td>
+                <td>Modelos OLTP y OLAP, propuestas de arquitectura y migraciones de datos seguras.</td>
+                <td><span class="badge badge--progress">2026-2</span></td>
+              </tr>
+              <tr>
+                <td><strong>Desarrollo de sistemas de información</strong></td>
+                <td>Análisis de requerimientos y diagramas para un sistema POS.</td>
+                <td><span class="badge badge--progress">2026-2</span></td>
+              </tr>
+              <tr>
+                <td><strong>Cálculo multivariado</strong></td>
+                <td>Modelado matemático aplicado a problemas reales (proyecto de vivienda VIS).</td>
+                <td><span class="badge badge--progress">2026-2</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 1rem;"><small>Tabla con desplazamiento horizontal en pantallas pequeñas.</small></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Pie de página (igual en todas las páginas) ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Wilson Achagua · Hecho con HTML, CSS y JavaScript · Villavicencio, Colombia</p>
+      <ul class="footer__links">
+        <!-- EDITAR: reemplaza USUARIO por tu usuario de GitHub y LinkedIn -->
+        <li><a href="https://github.com/USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="toTop" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>
